@@ -33,7 +33,7 @@ else:
 origFiles.sort()
 
 for origName in origFiles:
-    ext = os.path.splitext(origName)[1]
+    ext = str.lower(os.path.splitext(origName)[1])
 
     meta = pyexiv2.ImageMetadata(origName)
 
